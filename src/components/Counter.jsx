@@ -32,6 +32,7 @@ const Counter = () => {
   useEffect(() => {
     startTimer();
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       clearInterval(interval.current);
     };
   });
