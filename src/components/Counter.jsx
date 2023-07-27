@@ -43,7 +43,7 @@ const Counter = ({ onDate, onIsValid }) => {
     return () => {
       clearInterval(interval);
     };
-  }, [onDate]);
+  }, [onDate, onIsValid]);
 
   return (
     <div className='flex flex-row gap-4 cursor-default'>
